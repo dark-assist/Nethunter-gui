@@ -66,9 +66,9 @@ echo " sudo apt install kali-themes kali-defaults tigervnc-standalone-server -y 
 clear
 echo " sudo apt install dbus-x11 firefox-esr " >> ~/kali-arm64/home/kali/gui.sh
 clear
-echo " nameserver 1.1.1.1 " >> ~/kali-arm64/etc/resolv.conf
+echo "nameserver 1.1.1.1" >> ~/kali-arm64/etc/resolv.conf
 clear
-echo " nameserver 1.0.0.1 " >> ~/kali-arm64/etc/resolv.conf
+echo "nameserver 1.0.0.1" >> ~/kali-arm64/etc/resolv.conf
 echo " IF THE VNC NOT OPEN WITHOUT ROOT TERMINAL THEN EXIT THE NONROOT TERMINAL USING exit AND OPEN A ROOT NETHUNTER TERMINAL USING nh -r THEN RUN kex passwd AND SET YOUR VNC PASSWORD AGAIN AND RUN kex & IN ROOT THEN CONNECT VNC IN IP 127.0.0.1 AND PORT 5902 "
 
 
