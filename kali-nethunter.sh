@@ -38,7 +38,7 @@ while [ $progress -lt $total ]; do
     echo -n -e "\e[32m#\e0m"
     sleep 0.01
 done
-echo -e "] (100%)\nall are setup successfully "
+echo -e "] (100%)\n all are setup successfully"
 
 echo " "
 echo " "
@@ -46,33 +46,32 @@ echo " "
 apt update && apt upgrade -y
 clear
 apt install git wget -y && clear
-echo " chose your desire nethunter version "
+echo "chose your desire nethunter version"
 sleep 3
 
 wget -O install-nethunter-termux https://offs.ec/2MceZWr
 clear
-echo " IT TAKE SOME TIME SOO WAIT "
+echo "IT TAKE SOME TIME SOO WAIT"
+sleep 3
 bash install-nethunter-termux 
 clear
 
 clear
-echo " #!/bin/bash " > ~/kali-arm64/home/kali/gui.sh
+echo "#!/bin/bash" > ~/kali-arm64/home/kali/gui.sh
 clear
-echo " sudo apt update && sudo apt upgrade " >> ~/kali-arm64/home/kali/gui.sh
+echo "sudo apt update && sudo apt upgrade" >> ~/kali-arm64/home/kali/gui.sh
 clear
-echo " sudo apt install xfce4 xfce4-whiskermenu-plugin xfce4-terminal -y " >> ~/kali-arm64/home/kali/gui.sh
+echo "sudo apt install xfce4 xfce4-whiskermenu-plugin xfce4-terminal -y" >> ~/kali-arm64/home/kali/gui.sh
 clear
-echo " sudo apt install kali-themes kali-defaults tigervnc-standalone-server -y " >> ~/kali-arm64/home/kali/gui.sh
+echo "sudo apt install kali-themes kali-defaults tigervnc-standalone-server -y" >> ~/kali-arm64/home/kali/gui.sh
 clear
-echo " sudo apt install dbus-x11 firefox-esr " >> ~/kali-arm64/home/kali/gui.sh
+echo "sudo apt install dbus-x11 firefox-esr" >> ~/kali-arm64/home/kali/gui.sh
 clear
 echo "nameserver 1.1.1.1" >> ~/kali-arm64/etc/resolv.conf
 clear
 echo "nameserver 1.0.0.1" >> ~/kali-arm64/etc/resolv.conf
-echo " IF THE VNC NOT OPEN WITHOUT ROOT TERMINAL THEN EXIT THE NONROOT TERMINAL USING exit AND OPEN A ROOT NETHUNTER TERMINAL USING nh -r THEN RUN kex passwd AND SET YOUR VNC PASSWORD AGAIN AND RUN kex & IN ROOT THEN CONNECT VNC IN IP 127.0.0.1 AND PORT 5902 "
+echo "IF THE VNC NOT OPEN WITHOUT ROOT TERMINAL THEN EXIT THE NONROOT TERMINAL USING exit AND OPEN A ROOT NETHUNTER TERMINAL USING nh -r THEN RUN kex passwd AND SET YOUR VNC PASSWORD AGAIN AND RUN kex & IN ROOT THEN CONNECT VNC IN IP 127.0.0.1 AND PORT 5902"
 
 
 sleep 3
 nh
-    end 
-            end 
